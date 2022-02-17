@@ -290,6 +290,10 @@ ul {
   padding: 5px;
   border: 1px solid rgb(211, 211, 211);
 }
+.profile-menu a {
+  text-decoration: none;
+  color: black;
+}
 .profile-menu div {
   display: flex;
   justify-content: space-between;
@@ -304,6 +308,37 @@ ul {
 }
 .menu-details {
   width: 65%;
+}
+
+/* Profile Tabs */
+/* .dashboard {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+} */
+.addresses {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.addresses div h3 {
+  margin-bottom: 20px;
+}
+.acc-dtls {
+  margin-top: 10px;
+}
+.acc-dtls p {
+  margin-top: 5px;
+}
+.acct-dtls-change-btn {
+  width: 100px;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(43, 12, 129);
 }
 
 /* Cart */

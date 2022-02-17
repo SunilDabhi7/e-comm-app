@@ -1,32 +1,25 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// import { products } from "../Database/shop_db";
-import { userLogout, addToCart, removeItem } from "../Actions";
 import {
-  Navbar,
-  Main,
-  Footer,
-  Login,
-  Signup,
-  Profile,
-  EmptyCart,
-  Cart,
-} from ".";
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+  Link,
+} from "react-router-dom";
+
+import { Account, Addresses, Dashboard, Orders, Payment } from "./ProfileTabs";
+import { userLogout, addToCart, removeItem } from "../Actions";
+import { Navbar, Main, Footer, Login, Signup, Profile, Cart } from ".";
 
 class App extends Component {
-  // componentDidMount() {
-  //   this.props.dispatch(loadProducts(products));
-  // }
-
   handleLogout = () => {
     this.props.dispatch(userLogout());
     console.log("LOGGED OUT");
   };
 
   handleAddToCart = (item) => {
-    // console.log("handleAddToCart", item);
     this.props.dispatch(addToCart(item));
   };
 
@@ -65,11 +58,7 @@ class App extends Component {
             <Route
               path="/login"
               element={
-                !isLoggedIn ? (
-                  <Login />
-                ) : (
-                  <Profile handleLogout={this.handleLogout} />
-                )
+                !isLoggedIn ? <Login /> : <Navigate replace to="/profile" />
               }
             />
             <Route
@@ -87,7 +76,31 @@ class App extends Component {
             />
             <Route path="/signup" element={<Signup />} />
             {/* <Route path="/cart" element={<Cart />} /> */}
-            {/* <Route path="/profile" element={<Profile />} /> */}
+            <Route
+              path="/profile"
+              element={<Profile handleLogout={this.handleLogout} />}
+            >
+              <Route
+                path="dashboard"
+                element={<Dashboard shop={this.props.shop} />}
+              />
+              <Route
+                path="orders"
+                element={<Orders shop={this.props.shop} />}
+              />
+              <Route
+                path="address"
+                element={<Addresses shop={this.props.shop} />}
+              />
+              <Route
+                path="payment"
+                element={<Payment shop={this.props.shop} />}
+              />
+              <Route
+                path="account"
+                element={<Account shop={this.props.shop} />}
+              />
+            </Route>
           </Routes>
           <Footer />
         </div>
