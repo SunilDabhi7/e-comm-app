@@ -34,11 +34,21 @@ body {
   top: 0px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
+.hidden-menu {
+  display: none;
+}
+.menu-icn {
+  display: none;
+  margin-left: 20px;
+}
 .logo {
   height: 60%;
   font-family: "Cardo", serif;
   font-size: 24px;
   margin-left: 20px;
+}
+.logo-small {
+  display: none;
 }
 ul {
   list-style-type: none;
@@ -93,6 +103,9 @@ ul {
   color: white;
   margin-top: 8px;
 }
+.hidden-menu {
+  display: none;
+}
 
 /* Main */
 .main {
@@ -101,6 +114,9 @@ ul {
   width: 100%;
   height: 100%;
   margin-top: 30px;
+}
+.sort-filter-qry {
+  display: none;
 }
 .filter {
   height: auto;

@@ -1,0 +1,159 @@
+@media only screen and (max-width: 590px) {
+  /* Navbar */
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-icn {
+    display: block;
+    cursor: pointer;
+  }
+  .menu-icn img {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+  .menu-list {
+    display: none;
+  }
+  .hidden-menu {
+    width: 250px;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-color: rgb(43, 12, 129);
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    padding: 5px;
+  }
+  .hidden-menu ul {
+    margin-top: 10px;
+  }
+  .hidden-menu ul li {
+    padding: 5px 0;
+  }
+  .nav-scl-icn {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    border-top: 1px solid white;
+    /* justify-content: space-around; */
+  }
+  .nav-scl-icn div img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-size: cover;
+  }
+  .nav-close-btn {
+    /* position: absolute;
+    top: 5px;
+    right: 10px; */
+    cursor: pointer;
+  }
+  .nav-close-btn img {
+    width: 20px;
+    height: 20px;
+    /* margin-right: 10px;
+    margin-top: 10px; */
+    background-size: cover;
+  }
+
+  /* Main */
+  .product {
+    width: 40%;
+  }
+  .product-list {
+    justify-content: space-around;
+  }
+  .filter {
+    display: none;
+  }
+
+  /* Login & Signup */
+  .login-page {
+    width: 90%;
+    height: 500px;
+  }
+
+  /* Profile */
+  .profile-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-menu {
+    width: 90%;
+  }
+
+  /* Cart */
+  .cart {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-left-block {
+    width: 80%;
+    /* overflow: scroll; */
+  }
+  .cart-right-block {
+    width: 80%;
+  }
+  .ItemDetails {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  /* Navbar */
+  .logo {
+    display: none;
+  }
+  .logo-small {
+    display: inline-block;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    left: 55px;
+  }
+  .logo-small a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Main */
+  .main {
+    margin-top: 50px;
+  }
+  .sort-filter-qry {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    position: absolute;
+    top: 80px;
+    z-index: -1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  .sort-filter-qry div {
+    width: 50%;
+    text-align: center;
+    /* border: 1px solid grey; */
+  }
+  .product {
+    width: 90%;
+  }
+
+  /* Profile */
+  .profile-menu div {
+    overflow: scroll;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

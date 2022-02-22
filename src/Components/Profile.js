@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import { TabContainer } from "./ProfileTabs";
 
 class Profile extends Component {
@@ -20,8 +20,20 @@ class Profile extends Component {
         </div>
         <div className="profile-info">
           <div className="profile-menu">
-            <Link to="/profile/dashboard">
-              <div style={{ borderBottom: "1px solid rgb(211, 211, 211)" }}>
+            <NavLink
+              to="/profile/dashboard"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? "rgb(43, 12, 129)" : null,
+                  color: isActive ? "white" : null,
+                };
+              }}
+            >
+              <div
+                style={{
+                  borderBottom: "1px solid rgb(211, 211, 211)",
+                }}
+              >
                 <div>Dashboard</div>
                 <div className="menu-icn">
                   <img
@@ -30,8 +42,16 @@ class Profile extends Component {
                   />
                 </div>
               </div>
-            </Link>
-            <Link to="/profile/orders">
+            </NavLink>
+            <NavLink
+              to="/profile/orders"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? "rgb(43, 12, 129)" : null,
+                  color: isActive ? "white" : null,
+                };
+              }}
+            >
               <div style={{ borderBottom: "1px solid rgb(211, 211, 211)" }}>
                 <div>Orders</div>
                 <div className="menu-icn">
@@ -41,8 +61,16 @@ class Profile extends Component {
                   />
                 </div>
               </div>
-            </Link>
-            <Link to="/profile/address">
+            </NavLink>
+            <NavLink
+              to="/profile/address"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? "rgb(43, 12, 129)" : null,
+                  color: isActive ? "white" : null,
+                };
+              }}
+            >
               <div style={{ borderBottom: "1px solid rgb(211, 211, 211)" }}>
                 <div>Addresses</div>
                 <div className="menu-icn">
@@ -52,8 +80,16 @@ class Profile extends Component {
                   />
                 </div>
               </div>
-            </Link>
-            <Link to="/profile/payment">
+            </NavLink>
+            <NavLink
+              to="/profile/payment"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? "rgb(43, 12, 129)" : null,
+                  color: isActive ? "white" : null,
+                };
+              }}
+            >
               <div style={{ borderBottom: "1px solid rgb(211, 211, 211)" }}>
                 <div>Paymenet Methods</div>
                 <div className="menu-icn">
@@ -63,8 +99,16 @@ class Profile extends Component {
                   />
                 </div>
               </div>
-            </Link>
-            <Link to="/profile/account">
+            </NavLink>
+            <NavLink
+              to="/profile/account"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? "rgb(43, 12, 129)" : null,
+                  color: isActive ? "white" : null,
+                };
+              }}
+            >
               <div style={{ borderBottom: "1px solid rgb(211, 211, 211)" }}>
                 <div>Account Details</div>
                 <div className="menu-icn">
@@ -74,7 +118,7 @@ class Profile extends Component {
                   />
                 </div>
               </div>
-            </Link>
+            </NavLink>
             <Link to="/">
               <div onClick={this.handleLogoutClick}>
                 <div>Logout</div>

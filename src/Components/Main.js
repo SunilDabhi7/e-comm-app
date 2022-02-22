@@ -9,6 +9,10 @@ class Main extends Component {
     // console.log("STATE in Main: ", products.mobiles);
     return (
       <div className="main">
+        <div className="sort-filter-qry">
+          <div>Filter</div>
+          <div style={{ borderLeft: "1px solid grey" }}>Sort</div>
+        </div>
         <div className="filter">
           <div className="filter-details">
             <h4>Price</h4>

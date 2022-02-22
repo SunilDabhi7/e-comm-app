@@ -58,7 +58,11 @@ class App extends Component {
             <Route
               path="/login"
               element={
-                !isLoggedIn ? <Login /> : <Navigate replace to="/profile" />
+                !isLoggedIn ? (
+                  <Login />
+                ) : (
+                  <Navigate replace to="/profile/dashboard" />
+                )
               }
             />
             <Route
