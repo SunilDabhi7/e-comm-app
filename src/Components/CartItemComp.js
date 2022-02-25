@@ -36,7 +36,7 @@ class CartItemComp extends Component {
               </div>
               <div onClick={this.handleDeleteItem}>
                 <img
-                  src="https://cdn-icons.flaticon.com/png/512/2782/premium/2782988.png?token=exp=1644916345~hmac=463bbf20eeae8add39069cb0e53f1613"
+                  src="https://cdn-icons-png.flaticon.com/512/565/565491.png"
                   alt="icn"
                 />
               </div>
