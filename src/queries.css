@@ -140,6 +140,7 @@
   .sort-filter-qry {
     display: flex;
     width: 90%;
+    padding: 5px 0;
     justify-content: space-around;
     position: absolute;
     top: 80px;
