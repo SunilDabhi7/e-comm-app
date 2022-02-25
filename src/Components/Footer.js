@@ -65,7 +65,10 @@ class Footer extends Component {
           </div>
         </div>
         <div className="cpy-rght-dtls">
-          <div className="logo">
+          <div
+            className="logo"
+            style={{ display: "inline-block", marginRight: 15 }}
+          >
             <h3>
               Electronics<span style={{ color: "orangered" }}>.</span>
             </h3>

@@ -75,7 +75,7 @@ class Profile extends Component {
                 <div>Addresses</div>
                 <div className="menu-icn">
                   <img
-                    src="https://cdn-icons.flaticon.com/png/512/5654/premium/5654521.png?token=exp=1644835068~hmac=d5a44fd124a7e3a30291a9b0dc217bd8"
+                    src="https://cdn-icons-png.flaticon.com/512/927/927667.png"
                     alt="icn"
                   />
                 </div>
@@ -113,7 +113,7 @@ class Profile extends Component {
                 <div>Account Details</div>
                 <div className="menu-icn">
                   <img
-                    src="https://cdn-icons.flaticon.com/png/512/2102/premium/2102647.png?token=exp=1644835159~hmac=54328503677b03dc259fa3dbf43676fd"
+                    src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
                     alt="icn"
                   />
                 </div>

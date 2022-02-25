@@ -76,9 +76,11 @@ class Navbar extends Component {
           </div>
         </div>
         <div className="logo">
-          <h3>
-            Electronics<span style={{ color: "orangered" }}>.</span>
-          </h3>
+          <Link to="/">
+            <h3>
+              Electronics<span style={{ color: "orangered" }}>.</span>
+            </h3>
+          </Link>
         </div>
         <div className="logo-small">
           <Link to="/">

@@ -116,7 +116,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 370px) {
   /* Navbar */
   .logo {
     display: none;
@@ -126,7 +126,7 @@
     font-size: 25px;
     position: absolute;
     top: 15px;
-    left: 55px;
+    left: 60px;
   }
   .logo-small a {
     text-decoration: none;
@@ -157,5 +157,16 @@
   /* Profile */
   .profile-menu div {
     overflow: scroll;
+  }
+  .cpy-rght-dtls {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cpy-rght-dtls div {
+    margin-top: 10px;
+  }
+  .menu-details {
+    margin-top: 10px;
   }
 }
