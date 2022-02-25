@@ -69,7 +69,7 @@ class Navbar extends Component {
             </div>
             <div>
               <img
-                src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504839.png?token=exp=1645447191~hmac=f870cfd7c784ba0437f505089ef393fa"
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
                 alt="icn"
               />
             </div>
