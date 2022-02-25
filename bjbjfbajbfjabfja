@@ -1,0 +1,41 @@
+[33mcommit 9d17d3c3379c0b6fedea5a147c2e91ae3fd10b4b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: SunilDabhi <sunildabhi.78@gmail.com>
+Date:   Fri Feb 25 15:41:11 2022 +0530
+
+    Configure React app for deployment to GitHub Pages
+
+[33mcommit a82314e95662cde3e7fedcc7dfa5e38b6d7b7e40[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: SunilDabhi <sunildabhi.78@gmail.com>
+Date:   Fri Feb 25 15:06:14 2022 +0530
+
+    update 1.0
+
+[33mcommit b796f24f0fdadd4768a572eb561c745900bc8d5e[m
+Author: SunilDabhi <sunildabhi.78@gmail.com>
+Date:   Wed Feb 23 19:05:00 2022 +0530
+
+    edited footer component
+
+[33mcommit 8551d1b34c3f8b2e78b51524c5a51edb337019ca[m
+Author: SunilDabhi <sunildabhi.78@gmail.com>
+Date:   Tue Feb 22 17:49:52 2022 +0530
+
+    responsive styles
+
+[33mcommit 3717c1c23acc9f42b116e4f89c3f4f7860dc9209[m
+Author: SunilDabhi <sunildabhi.78@gmail.com>
+Date:   Thu Feb 17 16:22:02 2022 +0530
+
+    added profile finctionality components
+
+[33mcommit 0c1b5365b0061e1b88eba06c2ea0c3a829afd3f2[m
+Author: SunilDabhi <sunildabhi.78@gmail.com>
+Date:   Wed Feb 16 17:50:22 2022 +0530
+
+    app in working consition
+
+[33mcommit 026c2339e0fbadc14b64552bd498964780ee8dd8[m
+Author: SunilDabhi <sunildabhi.78@gmail.com>
+Date:   Sat Feb 12 15:37:49 2022 +0530
+
+    Initialize project using Create React App

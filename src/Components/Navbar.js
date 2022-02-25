@@ -34,7 +34,7 @@ class Navbar extends Component {
       <div className="Navbar">
         <div className="menu-icn" onClick={this.handleMenu}>
           <img
-            src="https://cdn-icons.flaticon.com/png/512/4543/premium/4543046.png?token=exp=1645173541~hmac=df4a6c270a87b45a9ed10ddc900757d2"
+            src="https://cdn-icons-png.flaticon.com/512/130/130918.png"
             alt="icn"
           />
         </div>
