@@ -117,7 +117,7 @@ class Navbar extends Component {
             <li>
               <Link to="/login">
                 <img
-                  src="https://cdn-icons.flaticon.com/png/512/2102/premium/2102647.png?token=exp=1644667748~hmac=a69e427e5dfa713ceef6b6f5ad042ce9"
+                  src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
                   alt="profile"
                 ></img>
               </Link>

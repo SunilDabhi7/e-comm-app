@@ -38,7 +38,7 @@ class Footer extends Component {
             </div>
             <div className="ftr-cntct-dtls" style={{ marginBottom: 5 }}>
               <span>
-                <img src="https://cdn-icons.flaticon.com/png/512/3686/premium/3686989.png?token=exp=1645621687~hmac=4eb26ee23a745edb949502bbecd061c4" />
+                <img src="https://cdn-icons-png.flaticon.com/512/552/552486.png" />
               </span>
               <span>Email Us : abc@mail.com</span>
             </div>
@@ -50,16 +50,16 @@ class Footer extends Component {
             </div>
             <div className="ftr-cntct-dtls" style={{ marginTop: 5 }}>
               <span>
-                <img src="https://cdn-icons.flaticon.com/png/512/3955/premium/3955024.png?token=exp=1645622882~hmac=e0f981d4ac943a70fb9817f920e232f5" />
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" />
               </span>
               <span>
-                <img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504903.png?token=exp=1645622904~hmac=9418bb0241df9d2c565fe10002ee4b31" />
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" />
               </span>
               <span>
-                <img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504947.png?token=exp=1645622922~hmac=a3b0943e749ffd7716ccc05f84ce15bb" />
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" />
               </span>
               <span>
-                <img src="https://cdn-icons.flaticon.com/png/512/2190/premium/2190403.png?token=exp=1645622950~hmac=d15f9a61d3924cdd3fdf7b858cb00f05" />
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" />
               </span>
             </div>
           </div>
