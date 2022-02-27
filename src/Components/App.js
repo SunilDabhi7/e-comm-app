@@ -11,7 +11,16 @@ import {
 
 import { Account, Addresses, Dashboard, Orders, Payment } from "./ProfileTabs";
 import { userLogout, addToCart, removeItem } from "../Actions";
-import { Navbar, Main, Footer, Login, Signup, Profile, Cart } from ".";
+import {
+  Navbar,
+  Main,
+  Footer,
+  Login,
+  Signup,
+  Profile,
+  Cart,
+  ItemDetails,
+} from ".";
 
 class App extends Component {
   handleLogout = () => {
@@ -79,7 +88,6 @@ class App extends Component {
               }
             />
             <Route path="/signup" element={<Signup />} />
-            {/* <Route path="/cart" element={<Cart />} /> */}
             <Route
               path="/profile"
               element={<Profile handleLogout={this.handleLogout} />}
@@ -105,6 +113,15 @@ class App extends Component {
                 element={<Account shop={this.props.shop} />}
               />
             </Route>
+            <Route
+              path="/item-details"
+              element={
+                <ItemDetails
+                  handleAddToCart={this.handleAddToCart}
+                  dispatch={this.props.dispatch}
+                />
+              }
+            />
           </Routes>
           <Footer />
         </div>

@@ -8,12 +8,13 @@ import Cart from "./Cart";
 import CartItemComp from "./CartItemComp";
 import EmptyCart from "./EmptyCart";
 import Profile from "./Profile";
+import ItemDetails from "./ItemDetails";
 
 export {
   Navbar,
   Main,
+  ItemDetails,
   Footer,
-  // ItemsCard,
   Login,
   Signup,
   Cart,

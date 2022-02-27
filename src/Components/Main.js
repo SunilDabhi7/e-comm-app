@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { products } from "../Database/shop_db";
 
 class Main extends Component {
   render() {
-    // console.log("STATE in Main: ", products.mobiles);
+    console.log("STATE in Main: ", products.mobiles);
     return (
       <div className="main">
         <div className="sort-filter-qry">
@@ -113,7 +113,18 @@ class ProductComp extends Component {
     return (
       <div className="product">
         <div className="product-poster">
-          <img src={item.poster} alt="poster"></img>
+          {/* <img src={item.poster} alt="poster"></img> */}
+          <NavLink
+            key={"/item-details"}
+            to="/item-details"
+            state={{
+              myState: item,
+              addToCartFlag: addToCartFlag,
+              isLoggedIn: isLoggedIn,
+            }}
+          >
+            <img src={item.poster} alt="poster"></img>
+          </NavLink>
         </div>
         <div className="product-details">
           <p>{item.title.model}</p>

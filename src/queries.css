@@ -155,6 +155,22 @@
     width: 90%;
   }
 
+  /* Item Details */
+  .item-details {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-details-left-block {
+    width: 90%;
+  }
+  .item-details-poster {
+    height: 300px;
+  }
+  .item-details-right-block {
+    width: 80%;
+  }
+
   /* Profile */
   .profile-menu div {
     overflow: scroll;
