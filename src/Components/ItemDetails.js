@@ -12,7 +12,7 @@ function ItemDetails() {
         </div>
         <div className="item-details-btn">
           <Link to="/">
-            <span style={{ textDecoration: "none" }}>Buy Now</span>
+            <span>Buy Now</span>
           </Link>
         </div>
       </div>
