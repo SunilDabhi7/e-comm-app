@@ -76,6 +76,7 @@ ul {
 .nav-right ul li {
   display: inline;
   margin-left: 20px;
+  cursor: pointer;
 }
 .nav-right ul li img {
   height: 20px;
@@ -83,29 +84,35 @@ ul {
   background-size: cover;
 }
 .search-container {
-  height: 40px;
+  height: 0px;
   width: 200px;
-  display: none;
+  display: flex;
   /* border: 1px solid black; */
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 40px;
+  top: 35px;
   left: -170px;
+  transition: all 0.3s;
+  overflow: hidden;
 }
-.search-container input {
+.search-container div input {
   height: 100%;
-  width: 80%;
+  width: 70%;
   border: none;
+  margin-left: 5px;
+}
+.search-container div input:focus {
+  outline: none;
 }
 .search-icon {
   height: 100%;
-  width: 20%;
+  width: 30%;
   text-align: center;
   background-color: black;
-}
-.search-icon p {
   color: white;
-  margin-top: 8px;
+  padding: 7px 0;
+  cursor: pointer;
 }
 .hidden-menu {
   display: none;
@@ -527,6 +534,10 @@ ul {
   padding: 5px 5px;
   text-align: center;
   cursor: pointer;
+}
+.checkout-btn a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .empty-cart {

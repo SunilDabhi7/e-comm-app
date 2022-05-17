@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { CartItemComp, EmptyCart } from ".";
 
@@ -54,6 +55,9 @@ class Cart extends Component {
                 <p>&#8377;{totalPrice}</p>
               </div>
               <div className="checkout-btn">Place Order</div>
+              <div className="checkout-btn">
+                <Link to="/">Continue Shopping</Link>
+              </div>
             </div>
           </div>
         ) : (

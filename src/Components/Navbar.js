@@ -5,28 +5,46 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: "none",
+      menuHeight: 0,
+      menuPadding: 0,
       closeFlag: false,
+      searchHeight: 0,
+      searchFlag: false,
     };
   }
 
-  handleNavClose = () => {
+  handleMenu = () => {
     if (this.state.closeFlag === false) {
       this.setState({
-        display: "none",
+        menuHeight: "100vh",
+        menuPadding: 5,
         closeFlag: true,
       });
     } else {
       this.setState({
-        display: "inline-block",
+        menuHeight: 0,
+        menuPadding: 0,
         closeFlag: false,
       });
     }
   };
-  handleMenu = () => {
-    this.setState({
-      display: "inline-block",
-    });
+  // handleMenu = () => {
+  //   this.setState({
+  //     display: "inline-block",
+  //   });
+  // };
+  handleSearchField = () => {
+    if (this.state.searchFlag === false) {
+      this.setState({
+        searchHeight: 40,
+        searchFlag: true,
+      });
+    } else {
+      this.setState({
+        searchHeight: 0,
+        searchFlag: false,
+      });
+    }
   };
 
   render() {
@@ -38,8 +56,14 @@ class Navbar extends Component {
             alt="icn"
           />
         </div>
-        <div className="hidden-menu" style={{ display: this.state.display }}>
-          <span className="nav-close-btn" onClick={this.handleNavClose}>
+        <div
+          className="hidden-menu"
+          style={{
+            height: this.state.menuHeight,
+            padding: this.state.menuPadding,
+          }}
+        >
+          <span className="nav-close-btn" onClick={this.handleMenu}>
             <img
               src="https://cdn-icons-png.flaticon.com/512/889/889590.png"
               alt="icn"
@@ -100,17 +124,17 @@ class Navbar extends Component {
           </ul>
         </div>
         <div className="nav-right">
-          <div className="search-container">
-            <input placeholder="  Search..."></input>
-            <div className="search-icon">
-              <p>
-                <i className="fas fa-search"></i>
-                {/* Search */}
-              </p>
+          <div
+            className="search-container"
+            style={{ height: this.state.searchHeight }}
+          >
+            <div>
+              <input placeholder="  Search..."></input>
             </div>
+            <div className="search-icon">Find</div>
           </div>
           <ul>
-            <li>
+            <li onClick={this.handleSearchField}>
               <img
                 src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
                 alt="search"
